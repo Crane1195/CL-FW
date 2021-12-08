@@ -1,1 +1,115 @@
 # Installation and Setup Guide
+
+## Pre-requisites
+
+- [Install Visual Studio Code](https://code.visualstudio.com/Download)
+- [Install PlatformIO as an extension for VSCode](https://platformio.org/install/ide?install=vscode)
+
+## Installation
+
+To install CL-FW, go to the [Releases Page](https://github.com/Crane1195/CL-FW/releases) of this repository.
+
+Under the latest one, click **Assets**, then click **Source Code (zip)**.
+
+![image](../images/DownloadRelease.png)
+
+---
+
+Copy the folder within the ZIP file to somewhere convenient for you, such as the Desktop.
+
+![image](../images/ExtractFolder.png)
+
+---
+
+Open PlatformIO within VSCode.
+
+![image](../images/OpenPlatformIO.png)
+
+---
+
+Select **Open Project**.
+
+![image](../images/OpenProject.png)
+
+---
+
+Navigate to the folder you copied out of the ZIP file and select **Open "CL-FW-X.Y.Z"**.
+
+![image](../images/OpenProject2.png)
+
+---
+
+On the bottom bar, click this button to change the platform you are using.
+
+![image](../images/SelectEnv.png)
+
+---
+
+Scroll through this menu and select the device you are using.
+
+![image](../images/SelectEnv2.png)
+
+---
+
+If you wish to change your pinout, navigate to `CL-FW/src/Hardware` on the Explorer tab, and double click the file that corresponds to your device.
+
+- If you use a GCCMX, HTangl, B0XX, or Smash Box, the pinouts in these files match up with the controllers default pinout.
+- If you are using a Model S or GCCPCB, the pinouts in these files match up with the button mapping shown in their User's Manuals.
+- 255 Indicates that the button is not present on the controller
+
+![image](PinoutEdit.png)
+
+---
+
+If you wish to change the button mapping for a specific game, navigate to `CL-FW/src/GameModes`.
+
+In the constructor function, you will see a section where you can redefine which button corresponds to which of the original buttons.
+
+See the `FGC.h` file for an example of how this is used.
+
+---
+
+You can configure SOCD for each Game in `src/CL-FW.ino`, which button hold corresponds to which mode in `src/Classes/Modes.h`, which coordinates each game uses in their respective files, and quite a bit more if you are willing to read through the code a bit.
+
+---
+
+Once you are finished configuring your firmware, press the right facing arrow on the bottom bar to upload the firmware to your controller.
+
+![image](../images/Upload.png)
+
+---
+
+## Game Profiles
+Currently there are 5 game profiles. Melee, Ultimate, PM, RoA, and FGC/D-pad. While plugging in the controller:
+* Hold no buttons for Melee.
+* Hold B for Ultimate.
+* Hold X for PM.
+* Hold Z for RoA.
+* Hold Up for FGC/D-pad.
+
+## Device Modes
+Currently there are 4 device modes. GameCube, N64, PC Dinput Gamepad, and PC Keyboard. While plugging in the controller:
+* Hold no buttons for GameCube Mode
+* Hold C-Up for N64 Mode
+* Plug in via USB and hold no buttons for PC Dinput Gamepad Mode
+* Plug in via USB and hold modY for PC Keyboard Mode
+
+## Input Viewer Setup
+CL-FW is compatible with [OtaK's B0XX Viewer RS](https://github.com/OtaK/b0xx-viewer-rs). See the README there for instructions on how to set it up.
+
+## Dolphin Setup
+In the folder you copied out of the ZIP file, navigate to `setup` and copy the `CL-FW.ini` file into this Dolphin folder.
+- If this folder path does not exist, create the necessary folders.
+
+![images](../images/DolphinConfigPath.png)
+
+---
+
+## Contact
+Let me know if you have any issues with the firmware in my Discord Server:
+https://craneslab.xyz/discord
+
+## Support my work
+I set up a donation link for people who appreciate my work and wish to donate. Donations are greatly appreciated, but are far from necessary:
+
+https://www.paypal.com/donate/?hosted_button_id=NFDEML5FKR8N8
