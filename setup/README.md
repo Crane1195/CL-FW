@@ -108,6 +108,7 @@ In Dolphin, click **Controllers**, then set Port 1 to **Standard Controller**, t
 Open the Profile drop down, select **CL-FW**, and click **Load**.
 
 ![image](../images/DolphinControllerConfig.png)
+
 ---
 
 ## Contact
