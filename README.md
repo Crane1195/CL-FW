@@ -55,9 +55,18 @@ This firmware is for all-digital fightsticks, with an emphasis on:
 ## Credits
 [@JonnyHaystack](https://github.com/JonnyHaystack) - Creator of [HayB0XX](https://github.com/JonnyHaystack/HayB0XX), providing the pinout of the B0XX r2, the most up to date coordinates for Melee mode, and an example to follow for how to use PlatformIO.
 
+[@Nicohood](https://github.com/NicoHood/Nintendo) - Creator of the [Nintendo Library](https://github.com/NicoHood/Nintendo) used for AVR boards.
+
+[@MHeironimus](https://github.com/MHeironimus) - Creator of the [PC Dinput Gamepad Library](https://github.com/MHeironimus/ArduinoJoystickLibrary) used for AVR boards.
+
+[@Arduino](https://github.com/Arduino) - Creators of open source hardware and libraries used for AVR boards, including the [Keyboard library used in this firmware](https://github.com/arduino-libraries/Keyboard)
+
 ## Contact
 Let me know if you have any issues with the firmware in my Discord Server:
 https://craneslab.xyz/discord
+
+## License
+CL-FW is licenced under the GNU GPL Version 3. [See the included LICENSE file for details](https://github.com/Crane1195/CL-FW/blob/main/LICENSE).
 
 ## Support my work
 I set up a donation link for people who appreciate my work and wish to donate. Donations are greatly appreciated, but are far from necessary:
