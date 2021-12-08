@@ -101,8 +101,13 @@ CL-FW is compatible with [OtaK's B0XX Viewer RS](https://github.com/OtaK/b0xx-vi
 In the folder you copied out of the ZIP file, navigate to `setup` and copy the `CL-FW.ini` file into this Dolphin folder.
 - If this folder path does not exist, create the necessary folders.
 
-![images](../images/DolphinConfigPath.png)
+![image](../images/DolphinConfigPath.png)
 
+In Dolphin, click **Controllers**, then set Port 1 to **Standard Controller**, then click **Configure** next to Port 1.
+
+Open the Profile drop down, select **CL-FW**, and click **Load**.
+
+![image](../images/DolphinControllerConfig.png)
 ---
 
 ## Contact
