@@ -52,12 +52,12 @@ Scroll through this menu and select the device you are using.
 ---
 
 If you wish to change your pinout, navigate to `CL-FW/src/Hardware` on the Explorer tab, and double click the file that corresponds to your device.
-
-- If you use a GCCMX, HTangl, B0XX, or Smash Box, the pinouts in these files match up with the controllers default pinout.
+- ArduinoDIY.h is used for the Arduino Leonardo, Micro, Pro Micro, Nano, Uno, and Mega2560.
+- If you use a GCCMX, HTangl, B0XX, or HitBox Smash Box, the pinouts in these files match up with the controllers default pinout.
 - If you are using a Model S or GCCPCB, the pinouts in these files match up with the button mapping shown in their User's Manuals.
 - 255 Indicates that the button is not present on the controller
 
-![image](PinoutEdit.png)
+![image](../images/PinoutEdit.png)
 
 ---
 
