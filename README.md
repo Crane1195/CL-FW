@@ -9,7 +9,7 @@ This firmware is for all-digital fightsticks, with an emphasis on:
 ## Current Features
 #### Modes
 * GameCube Mode
-* N64 Mode - Needs testing, I have not made an N64 cable yet
+* N64 Mode
 * PC Dinput Gamepad Mode
 * PC Keyboard Mode
 * PC Input Viewer Compatibility
