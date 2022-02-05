@@ -21,8 +21,8 @@ public:
         original_Pinout.y            =  11;
         original_Pinout.l1           = 255;
         original_Pinout.r1           =  12; // GCC Z button
-        original_Pinout.l2           =   6;
-        original_Pinout.r2           =  10;
+        original_Pinout.l2           =   6; // GCC L button
+        original_Pinout.r2           =  10; // GCC R button
         original_Pinout.lightshield  =  13;
         original_Pinout.midshield    =  A1;
         original_Pinout.cUp          =  A3;
