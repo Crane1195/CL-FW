@@ -35,7 +35,7 @@ public:
 
         current_Pinout   = original_Pinout;
 
-        defaultMUX = false;
+        defaultMUX = true;
 
         #if defined(HAS_USB)
             hasUSB = true;
