@@ -126,7 +126,7 @@ outputStatus rectangleDAC(inputStatus *inputs, coordinates currentCoords, SOCD l
         }
         else if (DIAGONAL) {
             // Wavedash
-            if (inputs->r2 || inputs->l2) {
+            if (inputs->r2 || inputs->l2 || inputs->lightshield || inputs->midshield) {
                 returnStatus.leftStickX += (positionX * currentCoords.modX_Diagonal_Shield.x);
                 returnStatus.leftStickY += (positionY * currentCoords.modX_Diagonal_Shield.y);
             }
