@@ -39,15 +39,13 @@ This firmware is for all-digital fightsticks, with an emphasis on:
 * HTangl v1
 * HTangl Prototype
 * 20XX B0XX r1 (18 Buttons)
-
-#### Hardware That Needs Testing (I do not have these)
 * 20XX B0XX r2 (20 Buttons)
 * HitBox Smash Box
+* JFA LBX
 
 #### Hardware To Eventually Support
 * Raspberry Pi Pico (and other RP2040 solutions)
 * Frame1 Heavy/Light
-* JFA Lunchbox
 
 ## Installation and Setup Guide
 [Here you can find a comprehensive Installation and Setup Guide for CL-FW](https://github.com/Crane1195/CL-FW/blob/main/setup/README.md).
