@@ -59,9 +59,18 @@ This firmware is for all-digital fightsticks, with an emphasis on:
 
 [@Arduino](https://github.com/Arduino) - Creators of open source hardware and libraries used for AVR boards, including the [Keyboard library used in this firmware](https://github.com/arduino-libraries/Keyboard)
 
-## Contact
-Let me know if you have any issues with the firmware in my Discord Server:
-https://craneslab.xyz/discord
+## Issues
+If you think there is a problem with the firmware, [create a post in the issues section](https://github.com/Crane1195/CL-FW/issues).
+
+Format your post like so:
+
+* Device: Model S v2.2 (what you are running the firmware on)
+* Host: Nintendo GCC adapter on Nintendo Switch (what you are connecting the Device to)
+* Game: Ultimate v13.0.1 (the software running on the Host)
+* Buttons pressed while plugging in: B
+* Actions: A detailed list of the actions you are performing
+* Expected behavior: What you expect to occur
+* Actual behavior: What is actually occuring
 
 ## License
 CL-FW is licenced under the GNU GPL Version 3. [See the included LICENSE file for details](https://github.com/Crane1195/CL-FW/blob/main/LICENSE).
