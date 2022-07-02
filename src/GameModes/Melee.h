@@ -16,29 +16,29 @@ public:
         current_Pinout = original_Pinout;
 
         // If you want to change this modes default mapping, you can do so here.
-        // current_Pinout.up           = original_Pinout.up         ;
-        // current_Pinout.down         = original_Pinout.down       ;
-        // current_Pinout.left         = original_Pinout.left       ;
-        // current_Pinout.right        = original_Pinout.right      ;
-        // current_Pinout.modX         = original_Pinout.modX       ;
-        // current_Pinout.modY         = original_Pinout.modY       ;
-        // current_Pinout.start        = original_Pinout.start      ;
-        // current_Pinout.select       = original_Pinout.select     ;
-        // current_Pinout.home         = original_Pinout.home       ;
-        // current_Pinout.a            = original_Pinout.a          ;
-        // current_Pinout.b            = original_Pinout.b          ;
-        // current_Pinout.x            = original_Pinout.x          ;
-        // current_Pinout.y            = original_Pinout.y          ;
-        // current_Pinout.l1           = original_Pinout.l1         ;
-        // current_Pinout.r1           = original_Pinout.r1         ;
-        // current_Pinout.l2           = original_Pinout.l2         ;
-        // current_Pinout.r2           = original_Pinout.r2         ;
-        // current_Pinout.lightshield  = original_Pinout.lightshield;
-        // current_Pinout.midshield    = original_Pinout.midshield  ;
-        // current_Pinout.cUp          = original_Pinout.cUp        ;
-        // current_Pinout.cDown        = original_Pinout.cDown      ;
-        // current_Pinout.cLeft        = original_Pinout.cLeft      ;
-        // current_Pinout.cRight       = original_Pinout.cRight     ;
+        current_Pinout.up           = original_Pinout.midshield         ;
+        current_Pinout.down         = original_Pinout.down       ;
+        current_Pinout.left         = original_Pinout.left       ;
+        current_Pinout.right        = original_Pinout.right      ;
+        current_Pinout.modX         = original_Pinout.modX       ;
+        current_Pinout.modY         = original_Pinout.modY       ;
+        current_Pinout.start        = original_Pinout.start      ;
+        current_Pinout.select       = original_Pinout.select     ;
+        current_Pinout.home         = original_Pinout.home       ;
+        current_Pinout.a            = original_Pinout.l2          ;
+        current_Pinout.b            = original_Pinout.a          ;
+        current_Pinout.x            = original_Pinout.r2          ;
+        current_Pinout.y            = original_Pinout.x          ;
+        current_Pinout.l1           = original_Pinout.l1         ;
+        current_Pinout.r1           = original_Pinout.lightshield         ;
+        current_Pinout.l2           = original_Pinout.y         ;
+        current_Pinout.r2           = original_Pinout.b         ;
+        current_Pinout.lightshield  = original_Pinout.r1;
+        current_Pinout.midshield    = original_Pinout.up  ;
+        current_Pinout.cUp          = original_Pinout.cDown        ;
+        current_Pinout.cDown        = original_Pinout.cRight      ;
+        current_Pinout.cLeft        = original_Pinout.cLeft      ;
+        current_Pinout.cRight       = original_Pinout.cUp     ;
 
 
         coords.maxOffset = 80;
