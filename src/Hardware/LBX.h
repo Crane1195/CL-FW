@@ -13,7 +13,7 @@ public:
         original_Pinout.modX         =   3;
         original_Pinout.modY         =   0;
         original_Pinout.start        =  A5;
-        original_Pinout.select       = 255;
+        original_Pinout.select       = 2;
         original_Pinout.home         = 255;
         original_Pinout.a            =  12;
         original_Pinout.b            =  13;

@@ -23,7 +23,7 @@ public:
         current_Pinout.modX         = original_Pinout.modX       ;
         current_Pinout.modY         = original_Pinout.modY       ;
         current_Pinout.start        = original_Pinout.start      ;
-        current_Pinout.select       = original_Pinout.select     ;
+        current_Pinout.select       = original_Pinout.up     ;
         current_Pinout.home         = original_Pinout.home       ;
         current_Pinout.a            = original_Pinout.l2          ;
         current_Pinout.b            = original_Pinout.a          ;
@@ -33,8 +33,8 @@ public:
         current_Pinout.r1           = original_Pinout.lightshield         ;
         current_Pinout.l2           = original_Pinout.y         ;
         current_Pinout.r2           = original_Pinout.b         ;
-        current_Pinout.lightshield  = original_Pinout.r1;
-        current_Pinout.midshield    = original_Pinout.up  ;
+        current_Pinout.lightshield  = original_Pinout.select;
+        current_Pinout.midshield    = original_Pinout.r1  ;
         current_Pinout.cUp          = original_Pinout.cDown        ;
         current_Pinout.cDown        = original_Pinout.cRight      ;
         current_Pinout.cLeft        = original_Pinout.cLeft      ;
@@ -159,7 +159,7 @@ public:
         outputs.dpadUp = (inputs->modX && inputs->modY && inputs->r_Up);
         outputs.dpadDown = (inputs->modX && inputs->modY && inputs->r_Down);
         // If you have select/home buttons, those can be used too for faster save/load state
-        outputs.dpadLeft = ((inputs->modX && inputs->modY && inputs->r_Left) || inputs->select);
+        outputs.dpadLeft = ((inputs->modX && inputs->modY && inputs->r_Left));
         outputs.dpadRight = ((inputs->modX && inputs->modY && inputs->r_Right) || inputs->home);
 
         if (inputs->midshield)
