@@ -31,8 +31,8 @@ public:
         current_Pinout.y            = original_Pinout.x          ;
         current_Pinout.l1           = original_Pinout.l1         ;
         current_Pinout.r1           = original_Pinout.lightshield         ;
-        current_Pinout.l2           = original_Pinout.y         ;
-        current_Pinout.r2           = original_Pinout.b         ;
+        current_Pinout.l2           = original_Pinout.b         ;
+        current_Pinout.r2           = original_Pinout.y         ;
         current_Pinout.lightshield  = original_Pinout.select;
         current_Pinout.midshield    = original_Pinout.r1  ;
         current_Pinout.cUp          = original_Pinout.cDown        ;
