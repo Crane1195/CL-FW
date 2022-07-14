@@ -20,7 +20,8 @@ enum game
     RoA,
     NASB,
     FGC,
-    DefaultKBD
+    DefaultKBD,
+    MeleeVanilla,
 };
 
 enum SOCD {
@@ -88,6 +89,8 @@ game selectGame(inputStatus buttonsPressed, device activeDevice) {
             returnGame = RoA;
         else if (buttonsPressed.l_Up)
             returnGame = FGC;
+        else if (buttonsPressed.start)
+            returnGame = MeleeVanilla;
             
     }
     else {

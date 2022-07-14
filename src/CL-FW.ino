@@ -70,7 +70,8 @@ CLFWController controller;
 
 //****************************************************************************//
 // Select your SOCD                                    LeftX,    LeftY,   RightX,   RightY   Axes
-meleeMode    meleeGameMode(controller.original_Pinout, TwoIPNoR, TwoIPNoR, TwoIPNoR, TwoIPNoR);
+meleeMode    meleeGameMode(controller.original_Pinout, TwoIPNoR, TwoIPNoR, TwoIPNoR, TwoIPNoR, false);
+meleeMode    meleeGameModeVanilla(controller.original_Pinout, TwoIPNoR, TwoIPNoR, TwoIPNoR, TwoIPNoR, true);
 ultimateMode ultGameMode  (controller.original_Pinout, TwoIP   , TwoIP   , TwoIP   , TwoIP   );
 PMMode       PMGameMode   (controller.original_Pinout, TwoIPNoR, TwoIPNoR, TwoIPNoR, TwoIPNoR);
 RoAMode      RoAGameMode  (controller.original_Pinout, TwoIP   , TwoIP   , TwoIP   , TwoIP   );
@@ -193,6 +194,10 @@ void initializeGame() {
             controller.current_Pinout = meleeGameMode.current_Pinout;
             if (currentDevice == GC) GCC.setDelay(120); // Works on GC/Wii
             break;
+        case MeleeVanilla :
+            controller.current_Pinout = meleeGameModeVanilla.current_Pinout;
+            if (currentDevice == GC) GCC.setDelay(120); // Works on GC/Wii
+            break;
         case Ultimate :
             controller.current_Pinout = ultGameMode.current_Pinout;     break;
         case PM :
@@ -213,6 +218,8 @@ void updateOutput() {
     switch(currentGame) {
         case Melee :
             controlStatus = meleeGameMode.updateOutput(&buttonStatus);   break;
+        case MeleeVanilla :
+            controlStatus = meleeGameModeVanilla.updateOutput(&buttonStatus);   break;
         case Ultimate :
             controlStatus = ultGameMode.updateOutput(&buttonStatus);     break;
         case PM :

@@ -11,7 +11,7 @@ class meleeMode {
 
 public:
     
-    meleeMode(pinout original_Pinout, SOCD leftX, SOCD leftY, SOCD rightX, SOCD rightY) {
+    meleeMode(pinout original_Pinout, SOCD leftX, SOCD leftY, SOCD rightX, SOCD rightY, bool forceVanilla) {
         
         current_Pinout = original_Pinout;
 
@@ -39,6 +39,11 @@ public:
         current_Pinout.cDown        = original_Pinout.cRight      ;
         current_Pinout.cLeft        = original_Pinout.cLeft      ;
         current_Pinout.cRight       = original_Pinout.cUp     ;
+
+        // Hold start when plugging in to force the default Frame1 Layout
+        if (forceVanilla){
+            current_Pinout = original_Pinout;
+        }
 
 
         coords.maxOffset = 80;
