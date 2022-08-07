@@ -111,6 +111,33 @@ Open the Profile drop down, select **CL-FW**, and click **Load**.
 
 ---
 
+## Installation using Platformio CLI (no VSCode requirement)
+
+If you don't have VSCode installed, you can also install the firmware using Platformio's CLI tool.
+
+- [Install the Platformio CLI tool](https://platformio.org/install/cli) There are distributions for most Linux distros and it is also available on PyPi (pip install -U platformio).
+
+- Clone the CL-FW repository to a folder on your system:
+```
+  git clone https://github.com/Crane1195/CL-FW.git
+```
+
+- Navigate to the CL-FW directory with `cd CL-FW`
+
+- Find the name of your device in platformio.ini. For example, if you're installing onto an Arduino Nano, note the exact name of the device from this line:
+```
+  [env:Arduino Nano]
+```
+
+- Install the firmware onto your device using the Platformio CLI's "pio" command and the device name from the INI file.
+
+For example, to load the firmware onto an Arduino Nano:
+```
+$ pio run --target upload -e 'Arduino Nano'
+```
+
+---
+
 ## Contact
 Let me know if you have any issues with the firmware in my Discord Server:
 https://craneslab.xyz/discord
