@@ -46,8 +46,8 @@ public:
         JoystickPC->setButton(5, outputs.l1);
         JoystickPC->setButton(6, outputs.r2);
         JoystickPC->setButton(7, outputs.l2);
-        JoystickPC->setButton(8, outputs.start);
-        JoystickPC->setButton(9, outputs.select);
+        JoystickPC->setButton(8, outputs.select);
+        JoystickPC->setButton(9, outputs.start);
         JoystickPC->setButton(10, outputs.home);
         JoystickPC->setButton(11, outputs.capture);
         JoystickPC->setButton(12, outputs.touchpad);
