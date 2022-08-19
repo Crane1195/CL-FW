@@ -177,8 +177,14 @@ outputStatus rectangleDAC(inputStatus *inputs, coordinates currentCoords, SOCD l
                 }
                 // Tilt angle
                 else {
-                    returnStatus.leftStickX += (positionX * currentCoords.modX_Diagonal.x);
-                    returnStatus.leftStickY += (positionY * currentCoords.modX_Diagonal.y);
+                    if (!inputs->b) {
+                        returnStatus.leftStickX += (positionX * currentCoords.modX_Diagonal.x);
+                        returnStatus.leftStickY += (positionY * currentCoords.modX_Diagonal.y);
+                    }
+                    else {
+                        returnStatus.leftStickX += (positionX * currentCoords.modX_Diagonal_B.x);
+                        returnStatus.leftStickY += (positionY * currentCoords.modX_Diagonal_B.y);
+                    }
                 }
             }
         }
@@ -255,8 +261,14 @@ outputStatus rectangleDAC(inputStatus *inputs, coordinates currentCoords, SOCD l
                 }
                 // Tilt angle
                 else {
-                    returnStatus.leftStickX += (positionX * currentCoords.modY_Diagonal.x);
-                    returnStatus.leftStickY += (positionY * currentCoords.modY_Diagonal.y);
+                    if (!inputs->b) {
+                        returnStatus.leftStickX += (positionX * currentCoords.modY_Diagonal.x);
+                        returnStatus.leftStickY += (positionY * currentCoords.modY_Diagonal.y);
+                    }
+                    else {
+                        returnStatus.leftStickX += (positionX * currentCoords.modY_Diagonal_B.x);
+                        returnStatus.leftStickY += (positionY * currentCoords.modY_Diagonal_B.y);
+                    }
                 }
             }
         }  
