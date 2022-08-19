@@ -117,7 +117,7 @@ public:
     outputStatus updateOutput(inputStatus *inputs) {
         outputStatus outputs = rectangleDAC(inputs, coords, leftXSOCD, leftYSOCD, rightXSOCD, rightYSOCD);
         
-        if (inputs->l_Left && inputs->l_Right && (outputs.leftStickX != coords.neutral) && !inputs->r2 && !inputs->l2 && !inputs->lightshield && !inputs->midshield) {
+        if (inputs->l_Left && inputs->l_Right && (outputs.leftStickX != coords.neutral) && (outputs.leftStickY == coords.neutral) && !inputs->r2 && !inputs->l2 && !inputs->lightshield && !inputs->midshield) {
             if (outputs.leftStickX > coords.neutral)
                 outputs.leftStickX = coords.neutral + coords.maxOffset;
             else
