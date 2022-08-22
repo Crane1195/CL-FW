@@ -64,6 +64,7 @@ If you think there is a problem with the firmware, [create a post in the issues 
 
 Format your post like so:
 
+* FW Version: v0.1.5 (or commit hash, ex: 5ab343d)
 * Device: Model S v2.2 (what you are running the firmware on)
 * Host: Nintendo GCC adapter on Nintendo Switch (what you are connecting the Device to)
 * Game: Ultimate v13.0.1 (the software running on the Host)
@@ -71,6 +72,8 @@ Format your post like so:
 * Actions: A detailed list of the actions you are performing
 * Expected behavior: What you expect to occur
 * Actual behavior: What is actually occuring
+
+If your post does not have all of this information, or it is not descriptive enough, it will be closed.
 
 ## License
 CL-FW is licenced under the GNU GPL Version 3. [See the included LICENSE file for details](https://github.com/Crane1195/CL-FW/blob/main/LICENSE).
