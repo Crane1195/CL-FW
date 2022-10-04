@@ -111,10 +111,6 @@ Open the Profile drop down, select **CL-FW**, and click **Load**.
 
 ---
 
-## Contact
-Let me know if you have any issues with the firmware in my Discord Server:
-https://craneslab.xyz/discord
-
 ## Support my work
 I set up a donation link for people who appreciate my work and wish to donate. Donations are greatly appreciated, but are far from necessary:
 
