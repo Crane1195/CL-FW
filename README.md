@@ -1,3 +1,7 @@
+# Deprecated
+
+This firmware is no longer being added to / maintained. You should use [HayBox](https://github.com/JonnyHaystack/HayBox) instead.
+
 # Crane's Lab Firmware
 
 This firmware is for all-digital fightsticks, with an emphasis on:
